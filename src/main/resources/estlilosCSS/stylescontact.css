@@ -1,0 +1,141 @@
+:root{
+    --color-azul:rgb(21, 19, 60);
+    --color-grisdark:rgb(115, 119, 123);
+    --color-grislight:rgb(241, 238, 233);
+    --color-naranja:rgb(236, 153, 75);
+}
+* {
+	font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+body {
+	background-color: var(--color-azul);   
+        color: var(--color-grislight);   
+        
+        
+}
+.contenedor header{
+    margin-top: -100px !important;
+}
+.header {
+    width: 100vw;
+    height: 10vh;
+    background-color: var(--color-naranja);
+    position: fixed;
+    
+    
+}
+.logo_nav-link{
+    color: var(--color-grislight);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: -10px;
+    margin-left: 20px; 
+}
+.ul-menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.ul-menu li{
+    list-style: none;
+}
+
+.ul-menu a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--color-grislight);
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.ul-menu a:hover{
+    border-style: solid;
+    color: var(--color-grislight);
+    
+}
+.logo_nav-link:hover{
+    border-style: solid;
+    color: var(--color-grislight);
+}    
+
+.contenedor-contact {
+	display: flex;
+	align-items: center;
+	background: var(--color-grisdark);
+	margin: 100px 30px;
+        
+        
+        
+}
+.form {
+	min-width: 200px;
+	width: 100%;
+	text-align: center;
+	padding: 40px;
+        
+}
+.form_input{
+	width: 100%;
+	padding: 7px;	
+	margin: 6px 0;
+	border: none;
+	border-bottom: 3px solid rgb(6, 70, 99);
+	background: transparent;
+	color: var(--color-naranja);
+
+}
+.form_input:hover{
+    background-color: var(--color-grislight);
+    transition: .7s;
+    
+}
+.form_input::placeholder{
+    color:var(--color-naranja);
+}
+
+.form_input:focus {
+	background: linear-gradient(to bottom,transparent,var(--color-azul));
+	outline: none;
+	border-bottom: 3px solid var(--color-naranja);
+}
+.form textarea {
+	min-height: 140px;
+	resize: none;
+
+}
+
+
+.form-img img {
+	width: 80%;
+	padding: 40px;
+	border-radius: 50%;
+	min-width: 200px;
+	max-width: 400px;
+        
+        
+}
+.form_input-sunmit {
+	background-color: rgb(6, 70, 99);
+	border-radius: 10px;
+        border-color: var(--color-naranja);
+	padding: 15px;
+        width: 80%;
+        color: var(--color-grislight);
+}
+.form_input-sunmit:hover {
+	background-color: var(--color-azul);
+	
+	padding: 15px;
+}
+
+.footer{
+    padding-bottom: 0;
+    text-align: center;
+}
